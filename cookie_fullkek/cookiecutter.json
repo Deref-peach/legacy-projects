@@ -1,0 +1,12 @@
+{
+  "project_name": "",
+  "description": "",
+  "version": "0.1.0",
+  "github_username": "peach-lasagna",
+  "email": "kir.kud@inbox.ru",
+  "hub": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_name }}",
+  "py_ver": "3.8",
+  "_copy_without_render": [
+    ".github/workflows/main.yaml"
+  ]
+}
