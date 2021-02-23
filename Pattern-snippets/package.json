@@ -1,0 +1,48 @@
+{
+  "name": "pattern-snippets",
+  "displayName": "Pattern snippets",
+  "description": "Snippet Sample",
+  "version": "0.0.1",
+  "publisher": "peach lasagna",
+  "author": {
+    "name": "peach lasagna",
+    "email": "kir.kud@inbox.ru"
+  },
+  "engines": {
+    "vscode": "^1.28.0"
+  },
+  "keywords": [
+    "python",
+    "examples",
+    "pattern",
+    "snippet",
+    "oop"
+  ],
+  "categories": [
+    "Snippets"
+  ],
+  "license": "MIT",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "python",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}
+// {
+//   "icon": "images/pytorch-logo.png",
+//   "galleryBanner": {
+//     "color": "#fbfbfb",
+//     "theme": "light"
+//   },
+//   "bugs": {
+//     "url": "https://github.com/SvenBecker/vscode-pytorch/issues"
+//   },
+//   "repository": {
+//     "type": "git",
+//     "url": "https://github.com/SvenBecker/vscode-pytorch.git"
+//   },
+//   "homepage": "https://github.com/SvenBecker/vscode-pytorch/blob/master/README.md",
+// }

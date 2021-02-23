@@ -1,0 +1,43 @@
+# Poetry pyproject.toml: https://python-poetry.org/docs/pyproject/
+
+[build-system]
+build-backend = "poetry.masonry.api"
+requires = ["poetry>=1.0"]
+
+[tool.poetry]
+authors = ["peach-lasagna <{{ kir.kud@inbox.ru }}>"]
+description = "bot for my class"
+license = "Apache Software License 2.0"
+name = "8vbot"
+readme = "README.md"
+version = "0.0.1"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+python-dotenv = "^0.14.0"
+vkwave = "^0.2.8"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.5.3"
+bandit = "^1.6.2"
+flake8 = "^3.8.3"
+isort = "^4.3.21"
+mypy = "^0.782"
+pydocstyle = "^5.0.2"
+pylama = "^7.7.1"
+pytest = "^6.0.1"
+vulture = "^1.5"
+
+[tool.isort]
+default_section = "FIRSTPARTY"
+force_grid_wrap = 0
+include_trailing_comma = true
+known_typing = "typing,types,typing_extensions,mypy,mypy_extensions"
+length_sort = true
+line_length = 90
+multi_line_output = 5
+sections = "TYPING,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+use_parentheses = true
+
+[tool.poetry.scripts]
+cli = "app.__main__:main"

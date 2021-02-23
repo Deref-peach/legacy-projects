@@ -1,0 +1,46 @@
+# Poetry pyproject.toml: https://python-poetry.org/docs/pyproject/
+
+[build-system]
+build-backend = "poetry.masonry.api"
+requires = ["poetry>=1.0"]
+
+[tool.poetry]
+authors = ["peach-lasagna <kir.kud@inbox.ru>"]
+description = "Piton, suka, eto moi jizn blyat...PITOOOOON!"
+license = "Apache Software License 2.0"
+name = "Blyathon"
+readme = "README.md"
+version = "0.1.0"
+
+documentation = "https://github.com/peach-lasagna/Blyathon/docs"
+homepage = "https://github.com/peach-lasagna/Blyathon"
+keywords = []
+repository = "https://github.com/peach-lasagna/Blyathon"
+
+# Pypi classifiers: https://pypi.org/classifiers/
+classifiers = []
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.5.3"
+bandit = "^1.6.2"
+flake8 = "^3.8.3"
+flake8-docstrings = "^1.5.0"
+isort = "^4.3.21"
+mypy = "^0.782"
+pylama = "^7.7.1"
+pytest = "^6.0.1"
+vulture = "^1.5"
+
+[tool.isort]
+default_section = "FIRSTPARTY"
+force_grid_wrap = 0
+include_trailing_comma = true
+known_typing = "typing,types,typing_extensions,mypy,mypy_extensions"
+length_sort = true
+line_length = 90
+multi_line_output = 5
+sections = "TYPING,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+use_parentheses = true

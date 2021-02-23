@@ -1,0 +1,58 @@
+# Poetry pyproject.toml: https://python-poetry.org/docs/pyproject/
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "Feelings_bot"
+description = "your little assistant"
+version = "0.1.0"
+authors = ["wretwe <kir.kud@inbox.ru>"]
+readme = "README.md"
+license = "Apache Software License 2.0"
+
+repository = "https://github.com/wretwe/Feelings_bot"
+homepage = "https://github.com/wretwe/Feelings_bot"
+documentation = "https://github.com/wretwe/Feelings_bot/docs"
+keywords = []
+
+# Pypi classifiers: https://pypi.org/classifiers/
+classifiers = []
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiohttp = "^3.6.2"
+python-dotenv = "^0.13.0"
+telethon = "^1.14.0"
+pillow = "^7.2.0"
+
+[tool.poetry.dev-dependencies]
+isort = "^4.3.21"
+vulture = "^1.5"
+flake8 = "^3.8.3"
+mypy = "^0.782"
+pylama = "^7.7.1"
+bandit = "^1.6.2"
+pydocstyle = "^5.0.2"
+black = "^19.10b0"
+autopep8 = "^1.5.3"
+
+[tool.isort]
+known_typing = "typing,types,typing_extensions,mypy,mypy_extensions"
+sections = "TYPING,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER"
+include_trailing_comma = true
+length_sort = true
+default_section = "FIRSTPARTY"
+multi_line_output = 5
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 90
+
+[tool.pydocstyle]
+ignore = "D100"
+
+[tool.black]
+line-length = 90
+target-version = ["py38"]
+exclude = "(Feelings_bot/|__pycache__|.eggs|.git|.hg|.mypy_cache|.nox|.tox|.venv|.svn|_build|buck-out|build|dist)"
